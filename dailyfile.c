@@ -4,7 +4,7 @@
 ///
 /// \author Christophe Blaess <christophe.blaess@logilin.fr>
 ///
-/// \licence GPLv2
+/// \licence GPLv3+
 ///
 
 	#include <errno.h>
