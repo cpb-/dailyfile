@@ -32,7 +32,7 @@ $ sudo make install
 $ dailyfile [options]
 ```
 
-###Options
+### Options
 
 * `-b, --buffer-size=SIZE`   Use a specific buffer size for the copy.
 * `-c, --cycle=SECONDS`      Cycle duration for switching files.
