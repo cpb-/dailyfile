@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 		{ NULL,          0,                 NULL,  0  }
 	};
 
-	while ((opt = getopt_long(argc, argv, "b:c:d:hl:p:s:v", options, NULL)) != -1) {
+	while ((opt = getopt_long(argc, argv, "b:c:d:hlp:s:v", options, NULL)) != -1) {
 		switch (opt) {
 			case 'b':
 				if (sscanf(optarg, "%d", &buffer_size) != 1) {
