@@ -7,37 +7,37 @@
 /// \licence GPLv3+
 ///
 
-	#include <errno.h>
-	#include <fcntl.h>
-	#include <getopt.h>
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include <string.h>
-	#include <time.h>
-	#include <unistd.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <getopt.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
 
-	#define PROGRAM_NAME            "dailyfile"
+#define PROGRAM_NAME            "dailyfile"
 
-	// Get the version from the Makefile and stringinize it.
-	#ifndef PROGRAM_VERSION
-	  #define PROGRAM_VERSION         0
-	#endif
-	#define xstr(s) str(s)
-        #define str(s) #s
-        #define PROGRAM_VERSION_STRING  xstr(PROGRAM_VERSION)
+// Get the version from the Makefile and stringinize it.
+#ifndef PROGRAM_VERSION
+  #define PROGRAM_VERSION         0
+#endif
+#define xstr(s) str(s)
+#define str(s) #s
+#define PROGRAM_VERSION_STRING  xstr(PROGRAM_VERSION)
 
 
-	#define DEFAULT_BUFFER_SIZE     16384
+#define DEFAULT_BUFFER_SIZE     16384
 
-	// Default filename is "day-YYYY-MM-DD.log"
-	// with YYYY, MM and DD representing current
-	// year, month and day (using G.M.Time).
-	#define DEFAULT_PREFIX          "day-"
-	#define DEFAULT_SUFFIX          ".log"
+// Default filename is "day-YYYY-MM-DD.log"
+// with YYYY, MM and DD representing current
+// year, month and day (using G.M.Time).
+#define DEFAULT_PREFIX          "day-"
+#define DEFAULT_SUFFIX          ".log"
 
-	// Default period for file switch in seconds
-	// is one day.
-	#define DEFAULT_CYCLE_DURATION  86400
+// Default period for file switch in seconds
+// is one day.
+#define DEFAULT_CYCLE_DURATION  86400
 
 int main(int argc, char *argv[])
 {
