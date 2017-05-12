@@ -20,11 +20,27 @@ Copyright 2017 [Christophe Blaess](https://www.blaess.fr/christophe).
 
 ## Installation
 
+You can install the project with CMake:
+
 ```
+$ git clone https://github.com/cpb-/dailyfile
+$ mkdir build
+$ cd build
+$ cmake ../dailyfile
+$ make
+$ sudo make install
+
+```
+
+or with the provided Makefile:
+```
+$ git clone https://github.com/cpb-/dailyfile
+$ cd dailyfile
 $ make clean
 $ make
 $ sudo make install
 ```
+
 
 ## Usage
 
